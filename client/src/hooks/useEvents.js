@@ -12,21 +12,6 @@ const useEvents = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // CREATE
-  //   const addEvent = async (eventData) => {
-  //     try {
-  //       setError(null);
-
-  //       const data = await createEvent(eventData);
-  //       console.log("CREATE RESPONSE:", data);
-
-  //       setEvents((previousEvents) => [...previousEvents, data.demo]);
-  //     } catch (error) {
-  //       console.log("CREATE ERROR:", error);
-  //       setError(error.message);
-  //     }
-  //   };
-
   const addEvent = async (eventData) => {
     try {
       setError(null);

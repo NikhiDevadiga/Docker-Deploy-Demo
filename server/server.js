@@ -1,3 +1,4 @@
+import "dotenv/config";
 import app from "./src/app.js";
 import {mongoConnect} from "./src/config/db.js"
 mongoConnect()
