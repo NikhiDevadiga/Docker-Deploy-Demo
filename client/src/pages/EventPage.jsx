@@ -42,7 +42,7 @@ const EventsPage = () => {
 
   return (
     <main>
-      <h1>Event Manager</h1>
+      <h1>Event Manager new</h1>
 
       <EventForm
         selectedEvent={selectedEvent}
