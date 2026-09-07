@@ -1,0 +1,20 @@
+name: Docker Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build backend Docker image
+        run: docker build -t demo-backend ./server
+
+      - name: Build frontend Docker image
+        run: docker build -t demo-frontend ./client
