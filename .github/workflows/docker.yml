@@ -39,3 +39,6 @@ jobs:
       - name: Push frontend Docker image
         run: |
           docker push ${{ vars.DOCKER_USERNAME }}/demo-frontend:latest
+
+      - name: Deploy backend to Render
+        run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
